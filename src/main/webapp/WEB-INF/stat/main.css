@@ -1,0 +1,244 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(11, 75, 64);
+}
+nav .container-fluid {
+  background-color: rgb(11, 75, 64);
+}
+.landing-page {
+  background-image: url("../images/test.jpeg");
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  position: relative;
+  word-spacing: 2.5px;
+}
+.landing-page .overlay {
+  position: absolute;
+  background-color: #33333373;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.content {
+  position: relative;
+  z-index: 2;
+}
+.content .span,
+.landing-page section h3 {
+  position: relative;
+}
+.landing-page .content h2 span,
+.landing-page section h3 span {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 2px;
+  background-color: orange;
+  z-index: 3;
+  border-radius: 16px;
+}
+.landing-page h3 {
+  width: 80%;
+  margin: 20px auto;
+  color: antiquewhite;
+}
+.content .paragraph p span {
+  color: rgb(11, 75, 64);
+}
+.landing-page .paragraph {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.landing-page .paragraph p {
+  margin: 10px;
+  color: antiquewhite;
+}
+section div p {
+  margin: 10px;
+  color: black;
+  font-size: 33px;
+  font-weight: 600;
+}
+@media (max-width: 567px) {
+  .cards .card {
+    margin: 10px auto;
+  }
+}
+.cards h1 {
+  position: relative;
+}
+.cards h1 span {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 2px;
+  background-color: orange;
+  z-index: 3;
+  border-radius: 16px;
+}
+
+.cards .card {
+  transition: 1s;
+  height: 300px;
+  -width: 300px;
+}
+.card img {
+  height: 100%;
+  width: 100%;
+}
+.cards .card:hover {
+  transform: scale(1.1);
+}
+/* start video */
+.video {
+  width: 85%;
+  margin: 30px auto;
+  min-height: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.089);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.596);
+}
+video {
+  width: 100%;
+  margin: auto;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  outline: none;
+}
+.video p {
+  color: antiquewhite;
+  width: 80%;
+  margin: 20px auto;
+  font-weight: 400;
+  font-size: 20px;
+  word-spacing: 2.5px;
+}
+@media (max-width: 767px) {
+  .video {
+    margin-top: 10px;
+  }
+  .video p {
+    width: 90%;
+    margin: 10px auto;
+    font-weight: small;
+    font-size: small;
+  }
+}
+/* start text */
+.text header {
+  color: orange;
+  font-weight: bold;
+  font-size: 33px;
+  margin-bottom: 20px;
+}
+.text .span {
+  position: relative;
+}
+.text .span span {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 2px;
+  background-color: orange;
+  z-index: 3;
+  border-radius: 16px;
+}
+.text p {
+  color: antiquewhite;
+  font-weight: 400;
+  font-size: 20px;
+  word-spacing: 2.5px;
+}
+/* footer */
+.footer .card-main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer .card {
+  width: calc(90% / 3);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: antiquewhite;
+}
+@media (max-width: 767px) {
+  .footer .card {
+    width: 85%;
+    margin: 20px auto;
+  }
+}
+.footer .card h3 {
+  color: rgb(11, 75, 64);
+}
+.footer .card h3 {
+  font-size: 33px;
+  font-weight: bold;
+}
+.footer .card-main .icon {
+  width: 60px;
+  margin: 10px auto;
+  height: 60px;
+  background-color: #25d366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .card-main .icon i,
+.footer .card-main .icon button i {
+  font-size: 30px;
+  font-weight: 400;
+  color: antiquewhite;
+}
+.footer .card-main .icon .fa-facebook,
+.footer .card-main .icon .blue {
+  width: 60px;
+  margin: 10px auto;
+  height: 60px;
+  background-color: #1877f2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.footer button {
+  width: 50%;
+  margin: 20px;
+  outline: none;
+  border: none;
+  background-color: rgb(11, 75, 64);
+  font-size: 30px;
+  font-weight: 400;
+  padding: 7px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 1s;
+  letter-spacing: 1.2px;
+}
+.footer button:hover {
+  background-color: antiquewhite;
+}
